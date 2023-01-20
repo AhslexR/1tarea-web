@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+/*-------------------------- HEADER --------------------  */
+
+}
+.area{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.area .header{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(31,34,43); 
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 55px;
+    border: 5px solid white;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.5);
+    cursor:pointer;
+    transition: .5;
+    user-select: none;
+    filter: grayscale(100%);
+ /*   
+    opacity: 0;
+*/
+
+
+}
+
+/*Convertir imagen en gris*/
+.header img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    box-shadow: 3px 3px 3px rgba(0,0,0,.5);
+
+}
+.header-text{
+    color: white;
+    width: 70%;
+    margin-left: auto;
+}
+
+.header-text h1{
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.header-text p1{
+    font-size: 20px;
+    color: lightgray;
+}
+/*-------------------------- CUERPO IZQUIERDO --------------------  */
+.contenido{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.area-izquierda{
+    width: 30%;
+    background-color: rgb(236,236,236);
+    text-align: center;
+}
+
+.area-izquierda .contacto{
+    margin-top: 110px;
+    padding: 0 30px;
+}
+
+.contacto h4{
+    font-size: 30px;
+    font-weight: normal;
+    margin: 20px 0;
+}
+.contacto h5{
+    font-size: 18px;
+    margin: 10px 0;
+
+}
+
+.contacto p{
+    font-size: 17px;
+}
+
+.idiomas{
+    margin-top: 30px;
+}
+
+.idiomas h4{
+        font-size: 30px;
+        font-weight: bold;
+        
+}
+.bars{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px 10px;
+    padding: 0 30px;
+}
+
+.bars .bar p{
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.bar span{
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(191,191,191);
+    margin-top:  10px;
+    border-radius: 10px;
+    position: relative;
+
+}
+.bar span::before{
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+.links h1{
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: normal;
+}
+.bars2{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px 5px;
+    padding: 0 80px;
+}
+
+
+.button {
+    background-color: #555555;
+    color: white;
+    border: 2px solid #555555;
+    margin: 4px 2px;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 22px;
+    transition-duration: 0.4s;
+    cursor:pointer;
+}
+
+.button:hover {
+    background-color: lightblue;
+    color: black;
+}
+/*-------------------------- CUERPO DERECHO --------------------  */
+
+.area-derecha{
+    width: 70%; 
+    padding: 50px;
+}
+
+.area-derecha h1{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.area-derecha h1 span{
+    margin-right: 30px;
+    font-size: 50px;
+    color: lightgray;
+}
+.parrafo{
+    margin-top: 10px;
+    margin-left: 85px;
+}
+
+.favoritos{
+    margin-top: 30px;
+}
+.favoritos a{
+    filter: grayscale(100%);
+}
+.favoritos a:hover{
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}

@@ -1,0 +1,33 @@
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>
+        calculadora de creditos
+</title>
+
+<link rel="stylesheet" href="style_fav.css">
+
+</head>
+
+<body>
+    <div class="area">
+    <h1>    Calcular creditos  </h1>
+    
+    <p style="text-align: center;" >Valor de los creditos itla: <b>$520</b></p>
+
+    <input type="number" name="credito" id="credito">
+    <button onclick="calcular()">Calcular</button>
+
+    <p id="resultado" style="text-align: center;">El costo de la materia es: </p>
+</div>
+
+<script>
+        function  calcular(){
+            n1 = Number(document.getElementById("credito").value)
+            document.getElementById("resultado").innerHTML = "El costo de la materia es: $"+ 520*n1 ;
+        
+        }
+        
+</script>
+</body>
