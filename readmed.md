@@ -1,2 +1,3 @@
 Portafolio de presentacion , para conocernos , en html , css 
-![mi captura](captura.png)
+![mi captura](/captura.png)
+
